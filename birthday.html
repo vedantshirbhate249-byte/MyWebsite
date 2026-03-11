@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Love</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family: Arial;
+text-align:center;
+background: linear-gradient(120deg,#ff758c,#ff7eb3);
+color:white;
+overflow:hidden;
+}
+
+.container{
+margin-top:80px;
+}
+
+h1{
+font-size:50px;
+}
+
+.photo{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+margin-top:20px;
+}
+
+p{
+font-size:20px;
+width:80%;
+margin:auto;
+margin-top:20px;
+}
+
+button{
+margin-top:25px;
+padding:12px 25px;
+font-size:18px;
+background:white;
+color:#ff4d6d;
+border:none;
+border-radius:25px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ffe6ec;
+}
+
+/* Balloons */
+
+.balloon{
+position:absolute;
+bottom:-150px;
+width:60px;
+height:80px;
+background:red;
+border-radius:50%;
+animation:float 8s infinite;
+}
+
+.balloon:after{
+content:'';
+position:absolute;
+width:2px;
+height:60px;
+background:white;
+left:50%;
+top:80px;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-110vh);}
+}
+
+.balloon:nth-child(1){left:10%; background:#ff4d6d; animation-duration:7s;}
+.balloon:nth-child(2){left:30%; background:#ffd93d; animation-duration:8s;}
+.balloon:nth-child(3){left:50%; background:#6bcB77; animation-duration:6s;}
+.balloon:nth-child(4){left:70%; background:#4d96ff; animation-duration:9s;}
+.balloon:nth-child(5){left:90%; background:#ff6b6b; animation-duration:7s;}
+
+</style>
+
+<script>
+function surprise(){
+alert("❤️ Happy Birthday! You are the most special person in my life ❤️");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+
+<div class="container">
+
+<h1>🎂 Happy Birthday ❤️</h1>
+
+<img src="photo.jpg.jpeg" class="photo">
+<img src="photo.jpg.jpeg" class="photo">
+<img src="photo.jpg.jpeg" class="photo">
+<p>
+On this special day, I just want to remind you how amazing and
+beautiful you are. May your birthday be filled with love,
+happiness and endless smiles. 💖
+</p>
+
+<button onclick="surprise()">Click for Surprise 🎁</button>
+
+</div>
+
+<!-- Background Music -->
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
